@@ -2,12 +2,11 @@
 This is the AI/ML learning journey and learning matplotlib is at #3.
 
 Table of Content:
-
-Project Overview
-Installation
-Uses
-Features
-Examples
+        - Project Overview
+        - Installation
+        - Uses
+        - Features
+        - Examples
 
 
 
@@ -70,3 +69,17 @@ Types of matplotlib visualization:
       This type of matplotlib visualization creates the relationship in between two entities inside a graph, connecting each of their relationships in x-axis and y-axis. together, connecting all those meeting points makes a single graph that explains the data through the same graph plots.
       
       Notes: If the data is in nested python list, it creates the dots only.
+
+      How to implement it?
+      after installing the necesary packages, follow the following commands:
+
+      - plt.figure(figsize=(10, 15))
+      - plt.title("Give title to the main graph", fontsize=20, fontweight='bold', color='red') # These all are similar to css property
+      - plt.plot(x_axis, y_axis, linestyle="-", color='blue', markercolor='orange', markeredgecolor='purple', linewidth=0.2) # mention the x_axis and y_axis variable in the beginning. blue color is for the line color, markercolor means the color of the center of the marked area where the x-axis and y-axis meet, markeredgecolor means the border color of the marker, linewidth means the thickness of the line drawn in the graph
+      - plt.xlabel("Mention the name of x-axis of your graph") # You can mention the css property here also, just like in plt.title
+      - ply.ylabel("Mention the name of y-axis of your graph") # You can mention the css property here also, just like in plt.title
+      - plt.xticks(rotation=15) # You can mention the css property here also, just like in plt.title
+      - plt.yticks(rotation=-15) # You can mention the css property here also, just like in plt.title
+      - plt.grid(True, linestyle="-", linewidth=0.5) # plt.grid(True) shows the grid in overal frame of the graph.
+      - plt.savefig("name_of_fig.png") # Save the figure in your currently working directory
+      - plt.show() # View the entire data through the bargraph
